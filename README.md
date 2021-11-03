@@ -1,1 +1,1 @@
-Everything I'll do in University or on my own you'll find in this repository.
+Tutto quanto farò all'università o per conto mio ;)
