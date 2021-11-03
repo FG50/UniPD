@@ -1,0 +1,22 @@
+include <stdio.h>
+#include <stdlib.h>
+
+long fattoriale(long n)
+
+{
+    
+    if(n<= 1)
+    return 1;
+    
+    return n * fattoriale(n - 1);
+    
+} 
+    
+    int main(void)
+    {
+        long n;
+        printf("Inserisci un numero: \n");
+        scanf("%ld", &n);
+        printf("Il suo fattoriale (n!) è: %ld\n" , fattoriale(n));
+    }
+    
