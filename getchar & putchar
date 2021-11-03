@@ -1,1 +1,13 @@
-
+#include <stdio.h>
+#include <stdlib.h>
+ 
+  main(void)
+ 
+ { 
+     char c;
+    while( (c= getchar() ) != '.')  
+    {  
+    putchar(c);
+    }   
+    return 0;                
+ }
