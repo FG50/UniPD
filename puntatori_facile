@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+    double arr[] = {5.0, 1.2, 100.3, 98.2};
+    double *ptr;
+    
+    ptr = &arr[0]; // prendo l'indirizzo del primo elemento
+    double v= * ptr;
+    printf("v:%g\n", v);
+    printf("ptr: %ld\n" , (unsigned long)ptr);
+    ptr = ptr + 1;
+    
+    v = *ptr;
+    
+    printf("{b} v:%g\n", v);
+    printf("{b} ptr:%lx\n" , (unsigned long)ptr);
+    return 0;
+}
