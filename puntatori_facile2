@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+    char ave = 'A';
+    
+    printf("ave: %c\n", ave);
+    
+    char *iper = &ave;
+    printf("iper:%p\n", iper);
+    char bar  = *iper;
+    
+     *iper = 'B';
+     printf("ave: %c\n", ave);
+      return 0;
+    
+
+}
