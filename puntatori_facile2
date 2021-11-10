@@ -8,7 +8,7 @@ int main(void) {
     
     char *iper = &ave;
     printf("iper:%p\n", iper);
-    char bar  = *iper;
+    char eva  = *iper;
     
      *iper = 'B';
      printf("ave: %c\n", ave);
