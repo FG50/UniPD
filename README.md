@@ -1,1 +1,1 @@
-Tutto ciò che farò all'università o per conto mio ;)
+Quel poco che mi ricordo di caricare, cose facili.
