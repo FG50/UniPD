@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+    
+    int i = 100;
+    char c = 'a';
+    int *pi;
+    char *pc;
+    
+    printf("Il carattere char occupa: %lu byte di memoria.\n\n" , sizeof(char));
+    printf("Il carattere int occupa: %lu byte di memoria.\n\n",  sizeof(int));
+    
+ //coincidono giustamete 
+    
+    printf("Il puntatore a char occupa: %lu byte di memoria.\n\n" ,sizeof(*pc));
+    printf("Il puntatore a int occupa: %lu byte di memoria.\n\n", sizeof(*pi));
+    
+    
+// ora faccio una stampa degli indirizzi 
+
+
+pi = &i; //refereziazione
+pc = &c;
+
+printf("L'indirizzo di memoria di i è: %p \n\n" , pi);
+printf("L'indirizzo di memoria di c é: %p \n\n", pc);
+
+
+
+// stampo int e puntatore assieme 
+
+printf("Il mio intero è: %d\n\n" , i);
+printf("Il valore della cella puntata è: %d\n\n" , *pi);
+
+// ora cambio il valore dell'intero e ristampo intero e il vlaore della cella puntata
+
+
+ i=10;
+ 
+ printf("Il mio intero è: %d\n\n", i);
+ printf("Il valore della cella puntata è diventato: %d\n\n" , *pi);
+ 
+ // posso inoltre modificare il contenuto della variabile utlizzando il puntatore
+ 
+ *pi=150;
+ printf("Il mio intero ora è: %d\n\n", i);
+
+// idem con patate per il char
+return 0;
+}
+
